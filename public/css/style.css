@@ -3,6 +3,7 @@
 .btn-outline-primary {
     color: #9733ee;
     border-color: #9733ee;
+    min-width: 130px;
 }
 
 .yesh_navbar {
@@ -29,6 +30,14 @@
 .btn {
     border-radius: 10px;
     line-height: 1.5em;
+}
+
+#menu_registerd {
+    display: block;
+}
+
+#menu_unregisterd {
+    display: none
 }
 
 
