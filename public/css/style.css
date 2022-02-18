@@ -1,0 +1,91 @@
+/* nav bar*/
+
+.yesh_navbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 50px;
+    height: 3px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.logo_yesh {
+    width: 150px
+}
+
+.btn {
+    border-radius: 10px;
+    line-height: 1.5em;
+}
+
+
+/* nav bar*/
+
+
+/* menu */
+
+.yesh_menu_iten {
+    align-items: center;
+}
+
+.yesh_menu_logo {
+    text-align: right;
+    color: black;
+}
+
+.yesh_button_X {
+    color: white !important;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #fcbf00;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    line-height: 1;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 50px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+
+/* menu */
