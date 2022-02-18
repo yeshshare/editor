@@ -1,5 +1,10 @@
 /* nav bar*/
 
+.btn-outline-primary {
+    color: #9733ee;
+    border-color: #9733ee;
+}
+
 .yesh_navbar {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -12,7 +17,7 @@
 .bar3 {
     width: 50px;
     height: 3px;
-    background-color: black;
+    background-color: #9733ee;
     margin: 6px 0;
     transition: 0.4s;
 }
