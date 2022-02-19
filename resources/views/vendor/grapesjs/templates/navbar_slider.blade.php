@@ -14,25 +14,58 @@
                 </div>
             </div>
             <div class="d-flex justify-content-end">
-                <div class="row">
-                    <div class="col">
-                        <button class="btn btn-outline-primary">
-                            Login
-                        </button>
-                    </div>
-                    <div class="col">
-                        <button class="btn btn-outline-primary">
-                            Cadastrar
-                        </button>
-                    </div>
-                    <div class="col">
-                        <div class="" id="btn_H" onclick="openNav(this)">
-                            <div class="bar1"></div>
-                            <div class="bar2"></div>
-                            <div class="bar3"></div>
+                <div id="menu_registerd">
+                    <div class="row">
+                        <div class="col">
+                            <button class="btn btn-outline-primary">
+                                Logout
+                            </button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-outline-primary">
+                                Rede Social
+                            </button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-outline-primary">
+                                Transmissao
+                            </button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-outline-primary">
+                                Cadastrar
+                            </button>
+                        </div>
+                        <div class="col">
+                            <div class="" id="btn_H" onclick="openNav(this)">
+                                <div class="bar1"></div>
+                                <div class="bar2"></div>
+                                <div class="bar3"></div>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </div> 
+                <div id="menu_unregisterd">
+                    <div class="row">
+                        <div class="col">
+                            <button class="btn btn-outline-primary">
+                                Login
+                            </button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-outline-primary">
+                                Cadastrar
+                            </button>
+                        </div>
+                        <div class="col">
+                            <div class="" id="btn_H" onclick="openNav(this)">
+                                <div class="bar1"></div>
+                                <div class="bar2"></div>
+                                <div class="bar3"></div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>          
             </div>
         </div>
     </nav>    

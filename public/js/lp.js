@@ -1,3 +1,20 @@
+ if (logado == "undefined") {
+     var logado = 'n'
+ }
+
+
+ try {
+     var menu_registred = document.getElementById("menu_registerd");
+     var menu_unregisterd = document.getElementById("menu_unregisterd");
+     menu_registred.style.display = (logado == 's') ? "block" : "none";
+     menu_unregisterd.style.display = (logado == 'n') ? "block" : "none";
+ } catch (error) {
+
+ }
+
+
+
+
  //funções para abrir menu        
  function openNav(x) {
      //x.classList.toggle("change");
