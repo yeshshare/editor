@@ -1,4 +1,18 @@
+body {
+    /* fallback for old browsers */
+    background: #9733EE;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to bottom right, #9733EE, #8F94FB);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to bottom right, #9733EE, #8F94FB);
+}
+
+
 /* nav bar*/
+
+.navbar {
+    background-color: white;
+}
 
 .btn-outline-primary {
     color: #9733ee;
@@ -66,7 +80,7 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #fcbf00;
+    background-color: #9733EE;
     overflow-x: hidden;
     transition: 0.5s;
 }
@@ -103,3 +117,39 @@
 
 
 /* menu */
+
+
+/*login*/
+
+.gradient-custom-2 {
+    /* fallback for old browsers */
+    background: #9733EE;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to bottom right, #9733EE, #8F94FB);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to bottom right, #9733EE, #8F94FB);
+}
+
+.tamanho {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .gradient-form {
+        height: 100vh !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .gradient-custom-2 {
+        border-top-right-radius: .3rem;
+        border-bottom-right-radius: .3rem;
+    }
+}
+
+#login {
+    background-color: transparent!important;
+}
+
+
+/*login*/
