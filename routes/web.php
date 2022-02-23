@@ -24,6 +24,8 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::get('/portal/{id}', [App\Http\Controllers\LandingPageController::class, 'index'])->name('portal');
 
+Route::get('/staff/{id}', [App\Http\Controllers\Staff\StaffController::class, 'index'])->name('staff');
+
 
 Route::get('/pages/{page}/editor', [App\Http\Controllers\PageController::class, 'editor'])->name('editor');
 

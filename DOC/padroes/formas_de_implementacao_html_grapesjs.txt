@@ -1,0 +1,184 @@
+
+
+{
+  "components": "[{\"tagName\":\"section\",\"components\":[{\"tagName\":\"nav\",\"classes\":[\"navbar\",\"fixed-top\",\"yesh_navbar\"],\"attributes\":{\"id\":\"ib2t\"},\"components\":[{\"classes\":[\"container-fluid\"],\"components\":[{\"classes\":[\"d-flex\",\"justify-content-start\"],\"components\":[{\"classes\":[\"row\"],\"components\":[{\"classes\":[\"col\"],\"components\":[{\"type\":\"image\",\"classes\":[\"logo_yesh\"],\"attributes\":{\"id\":\"logo\",\"src\":\"https://yeshmeet.yeshmeet.com.br/storage//YESH/landingpage/imagens/yesh-meet07pngyesh_1633023076837216987.png\",\"alt\":\"\"}}]}]}]},{\"classes\":[\"d-flex\",\"justify-content-center\"],\"components\":[{\"classes\":[\"row\"],\"components\":[{\"classes\":[\"col\"]}]}]},{\"classes\":[\"d-flex\",\"justify-content-end\"],\"components\":[{\"attributes\":{\"id\":\"menu_registerd\"},\"components\":[{\"classes\":[\"row\"],\"components\":[{\"classes\":[\"col\"],\"components\":[{\"tagName\":\"button\",\"type\":\"text\",\"classes\":[\"btn\",\"btn-outline-primary\"],\"components\":[{\"type\":\"textnode\",\"content\":\"\\n                                Logout\\n                            \"}]}]},{\"classes\":[\"col\"],\"components\":[{\"tagName\":\"button\",\"type\":\"text\",\"classes\":[\"btn\",\"btn-outline-primary\"],\"components\":[{\"type\":\"textnode\",\"content\":\"\\n                                Rede Social\\n                            \"}]}]},{\"classes\":[\"col\"],\"components\":[{\"tagName\":\"button\",\"type\":\"text\",\"classes\":[\"btn\",\"btn-outline-primary\"],\"components\":[{\"type\":\"textnode\",\"content\":\"\\n                                Transmissao\\n                            \"}]}]},{\"classes\":[\"col\"],\"components\":[{\"tagName\":\"button\",\"type\":\"text\",\"classes\":[\"btn\",\"btn-outline-primary\"],\"components\":[{\"type\":\"textnode\",\"content\":\"\\n                                Cadastrar\\n                            \"}]}]},{\"classes\":[\"col\"],\"components\":[{\"attributes\":{\"id\":\"btn_H\",\"onclick\":\"openNav(this)\"},\"components\":[{\"classes\":[\"bar1\"]},{\"classes\":[\"bar2\"]},{\"classes\":[\"bar3\"]}]}]}]}]},{\"attributes\":{\"id\":\"menu_unregisterd\"},\"components\":[{\"classes\":[\"row\"],\"components\":[{\"classes\":[\"col\"],\"components\":[{\"tagName\":\"button\",\"type\":\"text\",\"classes\":[\"btn\",\"btn-outline-primary\"],\"components\":[{\"type\":\"textnode\",\"content\":\"\\n                                Login\\n                            \"}]}]},{\"classes\":[\"col\"],\"components\":[{\"tagName\":\"button\",\"type\":\"text\",\"classes\":[\"btn\",\"btn-outline-primary\"],\"components\":[{\"type\":\"textnode\",\"content\":\"\\n                                Cadastrar\\n                            \"}]}]},{\"classes\":[\"col\"],\"components\":[{\"attributes\":{\"id\":\"btn_H-2\",\"onclick\":\"openNav(this)\"},\"components\":[{\"classes\":[\"bar1\"]},{\"classes\":[\"bar2\"]},{\"classes\":[\"bar3\"]}]}]}]}]}]}]}]}]},{\"tagName\":\"NULL\",\"type\":\"comment\",\"content\":\"menu\"},{\"tagName\":\"section\",\"attributes\":{\"id\":\"menu_bu\"},\"components\":[{\"classes\":[\"overlay\"],\"attributes\":{\"id\":\"myNav\"},\"components\":[{\"tagName\":\"NULL\",\"type\":\"comment\",\"content\":\"Header menu\"},{\"classes\":[\"card-header\"],\"components\":[{\"attributes\":{\"id\":\"nav_header\"},\"components\":[{\"tagName\":\"NULL\",\"type\":\"comment\",\"content\":\"<div class=\\\"d-flex justify-content-end\\\">...</div>\\n            <div class=\\\"d-flex justify-content-center\\\">...</div>\\n            <div class=\\\"d-flex justify-content-between\\\">...</div>\\n            <div class=\\\"d-flex justify-content-around\\\">...</div>\"},{\"classes\":[\"container-fluid\"],\"components\":[{\"classes\":[\"row\",\"yesh_menu_iten\"],\"components\":[{\"classes\":[\"col-8\",\"col-sm-8\",\"col-md-8\",\"col-lg-10\",\"col-xl-10\"],\"components\":[{\"type\":\"text\",\"classes\":[\"container\"],\"components\":[{\"type\":\"textnode\",\"content\":\"\\n                                \\n                            \"}]}]},{\"classes\":[\"col-4\",\"col-sm-4\",\"col-md-4\",\"col-lg-2\",\"col-xl-2\",\"align-content-center\"],\"components\":[{\"classes\":[\"container\"],\"components\":[{\"classes\":[\"row\",\"yesh_menu_iten\"],\"components\":[{\"classes\":[\"col-8\",\"yesh_menu_logo\"],\"components\":[{\"tagName\":\"h3\",\"type\":\"text\",\"components\":[{\"type\":\"textnode\",\"content\":\"Yesh\"}]}]},{\"classes\":[\"col-4\"],\"components\":[{\"type\":\"link\",\"classes\":[\"yesh_button_X\"],\"attributes\":{\"href\":\"javascript:void(0)\",\"onclick\":\"closeNav()\"},\"components\":[{\"type\":\"textnode\",\"content\":\"\\n                                            ✕\"}]}]}]}]}]}]}]},{\"tagName\":\"NULL\",\"type\":\"comment\",\"content\":\"<a href=\\\"javascript:void(0)\\\" class=\\\"closebtn\\\" onclick=\\\"closeNav()\\\"> &#10005;</a>\"}]}]},{\"tagName\":\"NULL\",\"type\":\"comment\",\"content\":\"Header menu\"},{\"tagName\":\"NULL\",\"type\":\"comment\",\"content\":\"body menu\"},{\"classes\":[\"card-body\"],\"components\":[{\"classes\":[\"overlay-content\"],\"attributes\":{\"id\":\"nav_body\"},\"components\":[{\"type\":\"link\",\"editable\":0,\"attributes\":{\"href\":\"#sobre\"},\"components\":[{\"tagName\":\"b\",\"type\":\"text\",\"components\":[{\"type\":\"textnode\",\"content\":\"Sobre\"}]}]},{\"type\":\"link\",\"editable\":0,\"attributes\":{\"href\":\"#cases\"},\"components\":[{\"tagName\":\"b\",\"type\":\"text\",\"components\":[{\"type\":\"textnode\",\"content\":\"Cases\"}]}]},{\"type\":\"link\",\"editable\":0,\"attributes\":{\"href\":\"#clientes\"},\"components\":[{\"tagName\":\"b\",\"type\":\"text\",\"components\":[{\"type\":\"textnode\",\"content\":\"Clientes\"}]}]},{\"type\":\"link\",\"editable\":0,\"attributes\":{\"href\":\"#contatos\"},\"components\":[{\"tagName\":\"b\",\"type\":\"text\",\"components\":[{\"type\":\"textnode\",\"content\":\"Contato\"}]}]}]}]},{\"tagName\":\"NULL\",\"type\":\"comment\",\"content\":\"body menu\"}]}]}]",
+  "styles": "[{\"selectors\":[\"#ib2t\"],\"style\":{\"z-index\":\"98\"}},{\"selectors\":[\"#myNav\"],\"style\":{\"z-index\":\"99\"}}]",
+  "css": "* { box-sizing: border-box; } body {margin: 0;}#ib2t{z-index:98;}#myNav{z-index:99;}",
+  "html": "<section><nav class=\"navbar fixed-top yesh_navbar\" id=\"ib2t\"><div class=\"container-fluid\"><div class=\"d-flex justify-content-start\"><div class=\"row\"><div class=\"col\"><img id=\"logo\" src=\"https://yeshmeet.yeshmeet.com.br/storage//YESH/landingpage/imagens/yesh-meet07pngyesh_1633023076837216987.png\" alt=\"\" class=\"logo_yesh\"/></div></div></div><div class=\"d-flex justify-content-center\"><div class=\"row\"><div class=\"col\"></div></div></div><div class=\"d-flex justify-content-end\"><div id=\"menu_registerd\"><div class=\"row\"><div class=\"col\"><button class=\"btn btn-outline-primary\">\n                                Logout\n                            </button></div><div class=\"col\"><button class=\"btn btn-outline-primary\">\n                                Rede Social\n                            </button></div><div class=\"col\"><button class=\"btn btn-outline-primary\">\n                                Transmissao\n                            </button></div><div class=\"col\"><button class=\"btn btn-outline-primary\">\n                                Cadastrar\n                            </button></div><div class=\"col\"><div id=\"btn_H\" onclick=\"openNav(this)\"><div class=\"bar1\"></div><div class=\"bar2\"></div><div class=\"bar3\"></div></div></div></div></div><div id=\"menu_unregisterd\"><div class=\"row\"><div class=\"col\"><button class=\"btn btn-outline-primary\">\n                                Login\n                            </button></div><div class=\"col\"><button class=\"btn btn-outline-primary\">\n                                Cadastrar\n                            </button></div><div class=\"col\"><div id=\"btn_H-2\" onclick=\"openNav(this)\"><div class=\"bar1\"></div><div class=\"bar2\"></div><div class=\"bar3\"></div></div></div></div></div></div></div></nav></section><!--menu--><section id=\"menu_bu\"><div id=\"myNav\" class=\"overlay\"><!--Header menu--><div class=\"card-header\"><div id=\"nav_header\"><!--<div class=\"d-flex justify-content-end\">...</div>\n            <div class=\"d-flex justify-content-center\">...</div>\n            <div class=\"d-flex justify-content-between\">...</div>\n            <div class=\"d-flex justify-content-around\">...</div>--><div class=\"container-fluid\"><div class=\"row yesh_menu_iten\"><div class=\"col-8 col-sm-8 col-md-8 col-lg-10 col-xl-10\"><div class=\"container\">\n                                \n                            </div></div><div class=\"col-4 col-sm-4 col-md-4 col-lg-2 col-xl-2 align-content-center\"><div class=\"container\"><div class=\"row yesh_menu_iten\"><div class=\"col-8 yesh_menu_logo\"><h3>Yesh</h3></div><div class=\"col-4\"><a href=\"javascript:void(0)\" onclick=\"closeNav()\" class=\"yesh_button_X\">\n                                            ✕</a></div></div></div></div></div></div><!--<a href=\"javascript:void(0)\" class=\"closebtn\" onclick=\"closeNav()\"> &#10005;</a>--></div></div><!--Header menu--><!--body menu--><div class=\"card-body\"><div id=\"nav_body\" class=\"overlay-content\"><a href=\"#sobre\"><b>Sobre</b></a><a href=\"#cases\"><b>Cases</b></a><a href=\"#clientes\"><b>Clientes</b></a><a href=\"#contatos\"><b>Contato</b></a></div></div><!--body menu--></div></section>"
+}
+
+
+
+
+
+
+
+1ª html gerado pela ferramenta
+{!! $page->html !!}
+
+pros :
+- o conteu já está pronto
+- elimina a replicação do codigo em mais de uma view.
+
+contra : 
+- difuculta a implementação de outro componentes que não estão no modelo editado
+- dificulta a implmentação de logica no arquivo blade
+
+recomendado para quando o conteudo exibido no editor for rederizado na integra
+
+___________________________
+2ª importar a view direto  no blade
+@include('vendor.grapesjs.templates.navbar_slider');
+
+pros :
+- o conteu já está pronto
+- pemite a implementação de outro componentes que não estão no modelo editado.
+- elimina a replicação do codigo em mais de uma view.
+
+contra 
+- dificulta a implmentação de logica no arquivo blade para impletação de reras de negocio no servidor
+
+
+
+
+recomendado para quando o conteudo exibido no editor for rederizado completamente na integra 
+ou o conteudo reprsenta apenas um parte da view onde as regra de negocios não são apilcados n servidor
+
+
+___________________________
+3ª inserir o codigo na integra
+
+pros :
+- o conteu já está pronto
+- pemite a implementação de outro componentes que não estão no modelo editado.
+- pemite a implmentação de logica no arquivo blade para impletação de reras de negocio no servidor
+
+contra 
+
+- POssibilita a replicação do codigo em mais de uma view.
+
+recomendado para quando o conteudo exibido no editor for rederizado completamente na integra 
+ou o conteudo reprsenta apenas um parte da view onde as regra de negocios não são apilcados n servidor
+
+
+<section>
+    <nav class="navbar fixed-top yesh_navbar" style="z-index: 98;">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-start">
+                <div class="row">
+                    <div class="col">
+                        <img id="logo" src="https://yeshmeet.yeshmeet.com.br/storage//YESH/landingpage/imagens/yesh-meet07pngyesh_1633023076837216987.png" class="logo_yesh" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div class="row">
+                    <div class="col"></div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-end">
+                <div id="menu_registerd">
+                    <div class="row">
+                        <div class="col">
+                            <button class="btn btn-outline-primary">
+                                Logout
+                            </button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-outline-primary">
+                                Rede Social
+                            </button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-outline-primary">
+                                Transmissao
+                            </button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-outline-primary">
+                                Cadastrar
+                            </button>
+                        </div>
+                        <div class="col">
+                            <div class="" id="btn_H" onclick="openNav(this)">
+                                <div class="bar1"></div>
+                                <div class="bar2"></div>
+                                <div class="bar3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div id="menu_unregisterd">
+                    <div class="row">
+                        <div class="col">
+                            <button class="btn btn-outline-primary">
+                                Login
+                            </button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-outline-primary">
+                                Cadastrar
+                            </button>
+                        </div>
+                        <div class="col">
+                            <div class="" id="btn_H" onclick="openNav(this)">
+                                <div class="bar1"></div>
+                                <div class="bar2"></div>
+                                <div class="bar3"></div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>          
+            </div>
+        </div>
+    </nav>    
+</section>
+<!--menu-->
+<section id="menu_bu">
+    <div id="myNav" class="overlay" style="z-index: 99;">
+        <!--Header menu-->
+        <div class="card-header">
+            <div id="nav_header">
+                <!--<div class="d-flex justify-content-end">...</div>
+            <div class="d-flex justify-content-center">...</div>
+            <div class="d-flex justify-content-between">...</div>
+            <div class="d-flex justify-content-around">...</div>-->
+                <div class="container-fluid">
+
+                    <div class="row yesh_menu_iten">
+                        <div class="col-8 col-sm-8 col-md-8 col-lg-10 col-xl-10">
+                            <div class="container">
+                                
+                            </div>
+                        </div>
+                        <div class="col-4 col-sm-4 col-md-4 col-lg-2 col-xl-2  align-content-center">
+                            <div class="container">
+                                <div class="row yesh_menu_iten">
+                                    <div class="col-8 yesh_menu_logo">
+                                        <h3>Yesh</h3>
+                                    </div>
+                                    <div class="col-4">
+                                        <a class="yesh_button_X" href="javascript:void(0)" onclick="closeNav()">
+                                            &#10005;</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &#10005;</a>-->
+            </div>
+        </div>
+        <!--Header menu-->
+        <!--body menu-->
+        <div class="card-body">
+            <div id="nav_body" class="overlay-content">
+                <a href="#sobre"><b>Sobre</b></a>
+                <a href="#cases"><b>Cases</b></a>
+                <a href="#clientes"><b>Clientes</b></a>
+                <a href="#contatos"><b>Contato</b></a>
+            </div>
+        </div>
+        <!--body menu-->
+      
+</section>
