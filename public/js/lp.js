@@ -1,37 +1,62 @@
-if (accessType == "undefined") {
-    var accessType = 2;
-};
+var body = document.getElementsByTagName("body")[0];
 
-if (logado == "undefined") {
-    var logado = 'n';
-};
+var menu_registred = ""
+var menu_unregisterd = ""
 
+body.addEventListener("load", init(), false);
 
-
-
-try {
-    var menu_registred = document.getElementById("menu_registerd");
-    var menu_unregisterd = document.getElementById("menu_unregisterd");
-    menu_registred.style.display = (logado == 's') ? "block" : "none";
-    menu_unregisterd.style.display = (logado == 'n') ? "block" : "none";
-} catch (error) {
-
-};
-
-
-try {
-    var login = document.getElementById("login");
-    login.style.display = (accessType == 1 || accessType == 2) ? "block" : "none";
-    let lista = document.querySelectorAll("section");
-    [].forEach.call(lista, (e) => {
-        if (e.id != login.id) {
-            console.log(e.id)
-            e.style.display = (accessType == 0 || accessType == 2) ? "block" : "none";
-        }
+function init() {
+    console.log("inicia_lp");
+    console.log(body.childNodes);
+    console.log(document.querySelectorAll('div'));
+    var lista = body.childNodes;
+    body.childNodes.forEach(function(iten) {
+        console.log(iten);
     });
-} catch (error) {
+
+    if (accessType == "undefined") {
+        var accessType = 2;
+    };
+
+    if (logado == "undefined") {
+        var logado = 's';
+    };
+
+    try {
+        menu_registred = document.getElementById("menu_registerd");
+        menu_unregisterd = document.getElementById("menu_unregisterd");
+        menu_registred.style.display = (logado == 's') ? "block" : "none";
+        menu_unregisterd.style.display = (logado == 'n') ? "block" : "none";
+    } catch (error) {
+
+    };
+
+
+    try {
+        var login = document.getElementById("login");
+        login.style.display = (accessType == 1 || accessType == 2) ? "block" : "none";
+        let lista = document.querySelectorAll("section");
+        [].forEach.call(lista, (e) => {
+            if (e.id != login.id) {
+                console.log(e.id)
+                e.style.display = (accessType == 0 || accessType == 2) ? "block" : "none";
+            }
+        });
+    } catch (error) {
+
+    };
+
 
 };
+
+
+
+
+
+
+
+
+
 
 
 

@@ -14,7 +14,7 @@
                 </div>
             </div>
             <div class="d-flex justify-content-end">
-                <div id="menu_registerd">
+                <menu_registerd>
                     <div class="row">
                         <div class="col">
                             <button class="btn btn-outline-primary">
@@ -44,7 +44,7 @@
                             </div>
                         </div>
                     </div>
-                </div> 
+                </menu_registerd> 
                 <div id="menu_unregisterd">
                     <div class="row">
                         <div class="col">
