@@ -1,7 +1,7 @@
 var body = document.getElementsByTagName("body")[0];
 
-var menu_registred = ""
-var menu_unregistred = ""
+var menu_registred = "";
+var menu_unregistred = "";
 
 body.addEventListener("load", init(), false);
 
@@ -11,13 +11,8 @@ body.addEventListener("load", init(), false);
 function init() {
 
     if (typeof parent.gjsEditor == "undefined") {
-
         var logado = document.querySelector("#registered").value;
         var accessType = parseInt(document.querySelector("#accessType").value);
-
-        console.log("sem editor");
-        console.log(logado);
-
         try {
             menu_registred = document.getElementById("menu_registerd");
             menu_unregistred = document.getElementById("menu_unregisterd");
@@ -26,12 +21,12 @@ function init() {
         } catch (error) {
             console.log(error);
         };
-
     } else {
-
         var editor = parent.gjsEditor;
         var lista = editor.getComponents();
         var components = lista.domc.componentsById;
+        var teste = components['menu_registerd_falso'];
+        console.log(teste);
         menu_registred = components['menu_registerd'];
         menu_unregistred = components['menu_unregisterd'];
         if (typeof parent.accessType == "undefined") {
@@ -39,20 +34,16 @@ function init() {
         } else {
             var accessType = parent.accessType;
         };
-
         if (typeof parent.logado == "undefined") {
             var logado = 's';
         } else {
             var logado = parent.logado;
         };
-
         try {
             if (logado == 's') {
-                console.log("logado");
                 menu_registred.setAttributes({ 'style': 'display: block' });
                 menu_unregistred.setAttributes({ 'style': 'display: none' });
             } else {
-                console.log("deslogado");
                 menu_unregistred.setAttributes({ 'style': 'display: block' });
                 menu_registred.setAttributes({ 'style': 'display: none' });
             }
@@ -60,15 +51,6 @@ function init() {
             console.log(error);
         };
     };
-
-
-
-
-
-
-
-
-
 
     try {
         var login = document.getElementById("login");
