@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+{{Auth::check()}}
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,8 +24,14 @@
     <div id="loader" style="left: 0;top:0;background-color:white;opacity:0.7;position:absolute;align-items:center;justify-content:center;width:100%;height:100%;font-size:36pt;display:flex;z-index:100;">
         <i class="fa fa-spinner fa-spin"></i>
     </div>
+    <input type="text"  id="registered" value="{{Auth::check()? 's' : 'n'}}" hidden >
+	<input type="text"  id="accessType" value="0" hidden >    
     <div id="{{ str_replace('#', '', $editorConfig->container ?? 'editor') }}"></div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="{{ asset('vendor/grapesjs/editor.js') }}"></script>
+    <script>
+		var logado = document.querySelector("#registered").value;
+		var accessType = parseInt(document.querySelector("#accessType").value);
+	</script>
 </body>
 </html>
