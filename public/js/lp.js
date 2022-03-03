@@ -2,6 +2,9 @@ var body = document.getElementsByTagName("body")[0];
 
 var menu_registred = "";
 var menu_unregistred = "";
+var components = null;
+var logado = ""
+var accessType = ""
 
 body.addEventListener("load", init(), false);
 
@@ -10,48 +13,14 @@ body.addEventListener("load", init(), false);
 
 function init() {
 
-    if (typeof parent.gjsEditor == "undefined") {
-        var logado = document.querySelector("#registered").value;
-        var accessType = parseInt(document.querySelector("#accessType").value);
-        try {
-            menu_registred = document.getElementById("menu_registerd");
-            menu_unregistred = document.getElementById("menu_unregisterd");
-            menu_registred.style.display = (logado == 's') ? "block" : "none";
-            menu_unregistred.style.display = (logado == 'n') ? "block" : "none";
-        } catch (error) {
-            console.log(error);
-        };
-    } else {
-        var editor = parent.gjsEditor;
-        var lista = editor.getComponents();
-        var components = lista.domc.componentsById;
-        var teste = components['menu_registerd_falso'];
-        console.log(teste);
-        menu_registred = components['menu_registerd'];
-        menu_unregistred = components['menu_unregisterd'];
-        if (typeof parent.accessType == "undefined") {
-            var accessType = 2;
-        } else {
-            var accessType = parent.accessType;
-        };
-        if (typeof parent.logado == "undefined") {
-            var logado = 's';
-        } else {
-            var logado = parent.logado;
-        };
-        try {
-            if (logado == 's') {
-                menu_registred.setAttributes({ 'style': 'display: block' });
-                menu_unregistred.setAttributes({ 'style': 'display: none' });
-            } else {
-                menu_unregistred.setAttributes({ 'style': 'display: block' });
-                menu_registred.setAttributes({ 'style': 'display: none' });
-            }
-        } catch (error) {
-            console.log(error);
-        };
+    load_parameters();
+    console.log(logado == 'n');
+    try {
+        show_element(("menu_registerd"), (logado == 's'));
+        show_element(("menu_unregisterd"), (logado == 'n'));
+    } catch (error) {
+        console.log(error);
     };
-
     try {
         var login = document.getElementById("login");
         login.style.display = (accessType == 1 || accessType == 2) ? "block" : "none";
@@ -69,14 +38,71 @@ function init() {
 
 };
 
+function load_parameters() {
+    if (typeof parent.gjsEditor == "undefined") {
+        try {
+            logado = document.querySelector("#registered").value;
+        } catch (error) {
+            logado = "s";
+        }
+        try {
+            accessType = parseInt(document.querySelector("#accessType").value);
+        } catch (error) {
+            accessType = 2;
+        }
+        accessType = parseInt(document.querySelector("#accessType").value);
+    } else {
+        try {
+            logado = parent.document.querySelector("#registered").value;
+        } catch (error) {
+            logado = "s";
+        }
+        try {
+            accessType = parseInt(parent.document.querySelector("#accessType").value);
+        } catch (error) {
+            accessType = 2;
+        }
+        editor = parent.gjsEditor;
+        lista = editor.getComponents();
+        components = lista.domc.componentsById;
+    }
+}
 
 
 
+function element_exists(tag) {
+    if (typeof parent.gjsEditor == "undefined") {
+        tag = "#" + tag;
+        elemnet = document.querySelector(tag);
+        return !(elemnet === null);
+    } else {
+        elemnet = components[tag];
+        return !(typeof elemnet === "undefined");
+    }
+}
+
+function get_element(tag) {
+    if (typeof parent.gjsEditor == "undefined") {
+        tag = "#" + tag;
+        elemnet = document.querySelector(tag);
+        return elemnet;
+    } else {
+        elemnet = components[tag];
+        return elemnet;
+    }
+}
 
 
-
-
-
+function show_element(tag, status) {
+    let element = get_element(tag);
+    let exibe = status ? "block" : "none"
+    if (typeof parent.gjsEditor == "undefined") {
+        element.style.display = exibe;
+    } else {
+        var valor = 'display:' + exibe;
+        element.setAttributes({ 'style': valor });
+    }
+}
 
 
 
