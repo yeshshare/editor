@@ -6,6 +6,12 @@
         text-align: right;
         color: black;
     }
+    .speaker_icons {
+        justify-content: space-around;
+    }
+    .itens_agenda {
+        text-align: start;
+    }
 }
 
 
@@ -23,6 +29,12 @@
         text-align: right;
         color: black;
     }
+    .speaker_icons {
+        justify-content: space-around;
+    }
+    .itens_agenda {
+        text-align: start;
+    }
 }
 
 
@@ -38,6 +50,12 @@
     }
     .yesh_menu_logo {
         display: none;
+    }
+    .speaker_icons {
+        justify-content: center;
+    }
+    .itens_agenda {
+        text-align: center;
     }
 }
 
@@ -55,6 +73,12 @@
     .yesh_menu_logo {
         display: none;
     }
+    .speaker_icons {
+        justify-content: center;
+    }
+    .itens_agenda {
+        text-align: center;
+    }
 }
 
 
@@ -71,6 +95,12 @@
     .yesh_menu_logo {
         display: none;
     }
+    .speaker_icons {
+        justify-content: center;
+    }
+    .itens_agenda {
+        text-align: center;
+    }
 }
 
 
@@ -86,5 +116,11 @@
     }
     .yesh_menu_logo {
         display: none;
+    }
+    .speaker_icons {
+        justify-content: center;
+    }
+    .itens_agenda {
+        text-align: center;
     }
 }
