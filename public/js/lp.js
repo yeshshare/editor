@@ -83,7 +83,7 @@ function load_parameters() {
         try {
             accessType = parseInt(document.querySelector("#accessType").value);
         } catch (error) {
-            accessType = 2;
+            accessType = 1;
         }
         accessType = parseInt(document.querySelector("#accessType").value);
     } else {
@@ -97,7 +97,21 @@ function load_parameters() {
         } catch (error) {
             accessType = 2;
         }
+        let config = window.editorConfig;
         editor = parent.gjsEditor;
+
+
+        function myPlugin(editor) {
+            editor.BlockManager.add('gjs-navbar', {
+                label: 'Plug',
+                category: 'Basic',
+                content: '<div class="my-block"><p>Plugin Success</p></div>',
+            });
+        }
+        editor.Config.plugins.push(myPlugin);
+
+
+        console.log(editor.Config.plugins);
         lista = editor.getComponents();
         components = lista.domc.componentsById;
     }

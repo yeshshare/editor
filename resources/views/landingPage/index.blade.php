@@ -5,7 +5,7 @@
 @section('lp.content')
 	{!! $page->html !!} 
     <input type="text"  id="registered" value="{{Auth::check()? 's' : 'n'}}" hidden >
-	<input type="text"  id="accessType" value="0" hidden >      
+	<input type="text"  id="accessType" value="1" hidden >      
 @endsection
 
 @section('lp.js')

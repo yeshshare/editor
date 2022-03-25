@@ -21,6 +21,7 @@
 </head>
 
 <body>
+   
     <div id="loader" style="left: 0;top:0;background-color:white;opacity:0.7;position:absolute;align-items:center;justify-content:center;width:100%;height:100%;font-size:36pt;display:flex;z-index:100;">
         <i class="fa fa-spinner fa-spin"></i>
     </div>
@@ -33,5 +34,8 @@
 		var logado = document.querySelector("#registered").value;
 		var accessType = parseInt(document.querySelector("#accessType").value);
 	</script>
+    
+  
+
 </body>
 </html>
