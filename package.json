@@ -21,6 +21,7 @@
         "sass-loader": "^11.0.1"
     },
     "dependencies": {
-        "grapesjs-navbar": "^0.1.5"
+        "grapesjs-navbar": "^0.1.5",
+        "toastr": "^2.1.4"
     }
 }

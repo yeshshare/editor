@@ -1,5 +1,6 @@
 import 'grapesjs/dist/css/grapes.min.css';
-
+import './plugins/grapesjs-preset-newsletter.css';
+//import './plugins/grapesjs-plugin-filestack.css';
 const grapesjs = require('grapesjs');
 import pluginBlocks from './plugins/grapesjs-blocks-basic';
 import pluginNavBar from './plugins/grapesjs-navbar';
@@ -10,15 +11,26 @@ import pluginBlocksFlexbox from './plugins/grapesjs-blocks-flexbox';
 import pluginLorySlider from './plugins/grapesjs-lory-slider';
 import pluginTooltip from './plugins/grapesjs-tooltip';
 import pluginTabs from './plugins/grapesjs-tabs';
+import pluginTyped from './plugins/grapesjs-typed';
+import pluginCustonCode from './plugins/grapesjs-custom-code';
+import pluginForms from './plugins/grapesjs-plugin-forms';
+import pluginStyleGradient from './plugins/grapesjs-style-gradient';
+import pluginStyleFilter from './plugins/grapesjs-style-filter';
+import pluginStyleBG from './plugins/grapesjs-style-filter';
+import pluginTouch from './plugins/grapesjs-touch';
+import pluginParserPostcss from './plugins/grapesjs-parser-postcss';
+import plugingIndexeddb from './plugins/grapesjs-indexeddb';
+import pluginFirestore from './plugins/grapesjs-firestore';
+import PluginPresetNewsletter from './plugins/grapesjs-preset-newsletter';
+import pluginPresetWebpage from './plugins/grapesjs-preset-webpage';
+//import pluginFilestack from './plugins/grapesjs-plugin-filestack';
 //import Aviary from './plugins/grapesjs-aviary';
-
-
 //import pluginPresetWebpage from './plugins/grapesjs-preset-webpage';
 // import bootstrap4 from 'grapesjs-blocks-bootstrap4';
 
-//import "toastr/build/toastr.min.css"
+import "toastr/build/toastr.min.css"
 
-//const toastr = require('toastr');
+const toastr = require('toastr');
 
 let config = window.editorConfig;
 delete window.editorConfig;
@@ -35,7 +47,19 @@ let plugins = [
     pluginLorySlider,
     pluginTooltip,
     pluginTabs,
-
+    pluginTyped,
+    pluginCustonCode,
+    pluginForms,
+    pluginStyleFilter,
+    pluginStyleBG,
+    pluginStyleGradient,
+    pluginTouch,
+    pluginParserPostcss,
+    plugingIndexeddb,
+    pluginFirestore,
+    PluginPresetNewsletter,
+    pluginPresetWebpage,
+    //pluginFilestack,
     // bootstrap4,
 ]
 let pluginsOpts = {
@@ -47,9 +71,30 @@ let pluginsOpts = {
     'grapesjs-lory-slider': {},
     'grapesjs-tooltip': {},
     'grapesjs-tabs': {},
+    'grapesjs-typed': {},
+    'grapesjs-custom-code': {},
+    'grapesjs-plugin-forms': {},
+    'grapesjs-style-gradient': {
+        colorPicker: 'default',
+        grapickOpts: {
+            min: 1,
+            max: 99,
+        }
+    },
+    'grapesjs-style-filter': {},
+    'grapesjs-style-bg': {},
+    'grapesjs-touch': {},
+    'grapesjs-parser-postcss': {},
+    'grapesjs-indexeddb': {},
+    'grapesjs-firestore': {},
+    'grapesjs-preset-newsletter': {},
+    'gjs-preset-webpage': {},
+    //'grapesjs-plugin-filestack': {},
     //'grapesjs-aviary': { onApply: "284a26c74ed78be001cf6933aa6c33b694d92d8f" },
     // 'grapesjs-blocks-bootstrap4': {},
 };
+
+
 
 if (config.imageEditor) {
     plugins.push(tUIImageEditor)
@@ -99,7 +144,7 @@ editor.addFontFamily = function(fontFamily, prepend) {
     let list = fontProperty.get('list');
 
     if (prepend) {
-        list.unshift(fontFamily);
+        //list.unshift(fontFamily);
     } else {
         list.push(fontFamily);
     }
