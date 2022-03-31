@@ -1,7 +1,10 @@
 import 'grapesjs/dist/css/grapes.min.css';
 import './plugins/grapesjs-preset-newsletter.css';
+//clear
+import './plugins/grapesjs-preset-webpage.css';
 //import './plugins/grapesjs-plugin-filestack.css';
 const grapesjs = require('grapesjs');
+// import dos arquivos javascript dos plugins
 import pluginBlocks from './plugins/grapesjs-blocks-basic';
 import pluginNavBar from './plugins/grapesjs-navbar';
 import pluginExport from './plugins/grapesjs-plugin-export';
@@ -21,12 +24,13 @@ import pluginTouch from './plugins/grapesjs-touch';
 import pluginParserPostcss from './plugins/grapesjs-parser-postcss';
 import plugingIndexeddb from './plugins/grapesjs-indexeddb';
 import pluginFirestore from './plugins/grapesjs-firestore';
-import PluginPresetNewsletter from './plugins/grapesjs-preset-newsletter';
+//import PluginPresetNewsletter from './plugins/grapesjs-preset-newsletter';
 import pluginPresetWebpage from './plugins/grapesjs-preset-webpage';
+import bootstrap4 from './plugins/grapesjs-blocks-bootstrap4';
 //import pluginFilestack from './plugins/grapesjs-plugin-filestack';
 //import Aviary from './plugins/grapesjs-aviary';
 //import pluginPresetWebpage from './plugins/grapesjs-preset-webpage';
-// import bootstrap4 from 'grapesjs-blocks-bootstrap4';
+
 
 import "toastr/build/toastr.min.css"
 
@@ -57,7 +61,8 @@ let plugins = [
     pluginParserPostcss,
     plugingIndexeddb,
     pluginFirestore,
-    PluginPresetNewsletter,
+    bootstrap4,
+    //PluginPresetNewsletter,
     pluginPresetWebpage,
     //pluginFilestack,
     // bootstrap4,
@@ -87,11 +92,22 @@ let pluginsOpts = {
     'grapesjs-parser-postcss': {},
     'grapesjs-indexeddb': {},
     'grapesjs-firestore': {},
-    'grapesjs-preset-newsletter': {},
+    'grapesjs-blocks-bootstrap4': {
+        blocks: {
+            // ...
+        },
+        blockCategories: {
+            // ...
+        },
+        labels: {
+            // ...
+        },
+    },
+    //'grapesjs-preset-newsletter': {},
     'gjs-preset-webpage': {},
     //'grapesjs-plugin-filestack': {},
     //'grapesjs-aviary': { onApply: "284a26c74ed78be001cf6933aa6c33b694d92d8f" },
-    // 'grapesjs-blocks-bootstrap4': {},
+    // 
 };
 
 
@@ -114,8 +130,21 @@ if (config.imageEditor) {
         },
     }
 }
-config.plugins = plugins
-config.pluginsOpts = pluginsOpts
+let canvas = {
+    styles: [
+        'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css'
+    ],
+    scripts: [
+        'https://code.jquery.com/jquery-3.3.1.slim.min.js',
+        'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js',
+        'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'
+    ],
+}
+
+
+config.plugins = plugins;
+config.pluginsOpts = pluginsOpts;
+config.canvas = canvas;
 let editor = grapesjs.init(config);
 
 if (config.exposeApi) {
