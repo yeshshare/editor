@@ -1,0 +1,23 @@
+adicionar a pasta no em  resources/js/ 
+
+plugins :
+
+Estrutura de pasta :
+
+grapejs - root do grapejs
+   |
+   |
+   - - - - plugins - pasta onde ficam os asquivos dos plugins.
+   |
+   |
+   gjs.js - código javascript gerador do editor do grapejs.
+   
+  
+editar o arquvo webpack e incluir a linha abaixo para executar a compliação do fonte do editor.js :
+ 
+mix.js('resources/js/grapejs/gjs', 'public/vendor/grapesjs/editor.js') - intrução de compliação do javascript do editor
+
+após isso rodar 'npm run dev' ou 'npm run wacth' para compliação do editor.
+ 
+ 
+ 
