@@ -1,5 +1,6 @@
 {
     "/js/app.js": "/js/app.js",
     "/vendor/grapesjs/editor.js": "/vendor/grapesjs/editor.js",
+    "/js/lp.js": "/js/lp.js",
     "/css/app.css": "/css/app.css"
 }

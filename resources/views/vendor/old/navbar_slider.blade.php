@@ -17,27 +17,22 @@
                 <div id="menu_registerd">
                     <div class="row">
                         <div class="col">
-                            <button class="btn btn-outline-primary">
-                                Logout
-                            </button>
+						    <a class="btn btn-outline-primary crt_link" href="">
+								Logout								
+							</a>	
                         </div>
                         <div class="col">
-                            <button class="btn btn-outline-primary">
-                                Rede Social
-                            </button>
+							<a class="btn btn-outline-primary crt_link" href="">
+								Rede Social								
+							</a>	
                         </div>
                         <div class="col">
-                            <button class="btn btn-outline-primary">
-                                Transmissao
-                            </button>
+                            <a class="btn btn-outline-primary crt_link" href="">
+								Transmissao								
+							</a>	
                         </div>
                         <div class="col">
-                            <button class="btn btn-outline-primary">
-                                Cadastrar
-                            </button>
-                        </div>
-                        <div class="col">
-                            <div class="" id="btn_H" onclick="openNav(this)">
+                            <div class="" id="btn_registerd" onclick="openNav(this)">
                                 <div class="bar1"></div>
                                 <div class="bar2"></div>
                                 <div class="bar3"></div>
@@ -48,17 +43,17 @@
                 <div id="menu_unregisterd">
                     <div class="row">
                         <div class="col">
-                            <button class="btn btn-outline-primary">
-                                Login
-                            </button>
+							<a class="btn btn-outline-primary crt_link" href="">
+								Login								
+							</a>	
                         </div>
                         <div class="col">
-                            <button class="btn btn-outline-primary">
-                                Cadastrar
-                            </button>
+                            <a class="btn btn-outline-primary crt_link" href="">
+								Cadastrar								
+							</a>	
                         </div>
                         <div class="col">
-                            <div class="" id="btn_H" onclick="openNav(this)">
+                            <div class="" id="btn_unregisterd" onclick="openNav(this)">
                                 <div class="bar1"></div>
                                 <div class="bar2"></div>
                                 <div class="bar3"></div>
@@ -82,7 +77,7 @@
             <div class="d-flex justify-content-around">...</div>-->
                 <div class="container-fluid">
 
-                    <div class="row yesh_menu_iten">
+                    <div id="btn_close_menu" class="row yesh_menu_iten">
                         <div class="col-8 col-sm-8 col-md-8 col-lg-10 col-xl-10">
                             <div class="container">
                                 
@@ -109,11 +104,14 @@
         <!--Header menu-->
         <!--body menu-->
         <div class="card-body">
-            <div id="nav_body" class="overlay-content">
-                <a href="#sobre"><b>Sobre</b></a>
-                <a href="#cases"><b>Cases</b></a>
-                <a href="#clientes"><b>Clientes</b></a>
-                <a href="#contatos"><b>Contato</b></a>
+            <div id="nav_body_registred" class="overlay-content">
+                <a href=""><b>Logout</b></a>
+                <a href=""><b>Rede Social</b></a>
+                <a href=""><b>Transmisão</b></a>                
+            </div>
+            <div id="nav_body_unregistred" class="overlay-content">
+                <a href=""><b>Login</b></a>
+                <a href=""><b>Cadastro</b></a>                
             </div>
         </div>
         <!--body menu-->

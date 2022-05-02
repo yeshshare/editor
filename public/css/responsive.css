@@ -12,6 +12,10 @@
     .itens_agenda {
         text-align: start;
     }
+    #logo,
+    .crt_link {
+        display: block;
+    }
 }
 
 
@@ -35,6 +39,10 @@
     .itens_agenda {
         text-align: start;
     }
+    #logo,
+    .crt_link {
+        display: block;
+    }
 }
 
 
@@ -56,6 +64,10 @@
     }
     .itens_agenda {
         text-align: center;
+    }
+    #logo,
+    .crt_link {
+        display: none;
     }
 }
 
@@ -79,6 +91,10 @@
     .itens_agenda {
         text-align: center;
     }
+    #logo,
+    .crt_link {
+        display: none;
+    }
 }
 
 
@@ -101,6 +117,10 @@
     .itens_agenda {
         text-align: center;
     }
+    #logo,
+    .crt_link {
+        display: none;
+    }
 }
 
 
@@ -122,5 +142,9 @@
     }
     .itens_agenda {
         text-align: center;
+    }
+    #logo,
+    .crt_link {
+        display: none;
     }
 }

@@ -17,3 +17,4 @@ mix.js('resources/js/app.js', 'public/js')
 
 
 mix.js('resources/js/grapejs/gjs', 'public/vendor/grapesjs/editor.js')
+mix.js('resources/js/grapejs/template/lp', 'public/js/lp.js')
