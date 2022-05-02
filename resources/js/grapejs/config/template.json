@@ -1,0 +1,14 @@
+{
+    "appendTo": ".PAPO",
+    "blocks": [{
+        "id": "0001",
+        "label": "Navbar",
+        "media": "class",
+        "content": { "type": "text" },
+        "activate": true,
+        "attributes": {
+            "class": "fa fa-bars",
+            "id": ""
+        }
+    }]
+}

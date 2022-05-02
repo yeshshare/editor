@@ -1,6 +1,7 @@
 body {
     /* fallback for old browsers */
     background-color: #9733EE;
+    font-family: 'Atyp Display';
 }
 
 
@@ -118,6 +119,15 @@ body {
 .btn-outline-primary {
     color: #9733ee;
     border-color: #9733ee;
+    border: 3.5px #9733EE solid;
+    min-width: 130px;
+}
+
+.btn-outline-primary:hover {
+    color: white;
+    border-color: #9733ee;
+    border: 3.5px #9733EE solid;
+    background-color: #9733EE;
     min-width: 130px;
 }
 
@@ -221,7 +231,7 @@ body {
     padding: 8px;
     text-decoration: none;
     font-size: 50px;
-    color: black;
+    color: white;
     display: block;
     transition: 0.3s;
 }
@@ -238,6 +248,18 @@ body {
     font-size: 60px;
 }
 
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: #9733EE;
+    text-align: center;
+    margin-top: 25px;
+    z-index: 1;
+}
+
 
 /* menu */
 
@@ -248,13 +270,22 @@ body {
     /* fallback for old browsers */
     background: transparent;
     /* Chrome 10-25, Safari 5.1-6 
-    background: -webkit-linear-gradient(to bottom right, #9733EE, #8F94FB);*/
+    background: -webkit-linear-gradient(to bottom right, #9733EE, #8F94FB);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
-    background: linear-gradient(to bottom right, #9733EE, #8F94FB); */
+    background: linear-gradient(to bottom right, #9733EE, #8F94FB);*/
+    /*color: black*/
+}
+
+.btn-espaco {
+    margin-right: 5px;
 }
 
 .tamanho {
     width: 100%;
+}
+
+section {
+    margin-top: 25px;
 }
 
 @media (min-width: 768px) {
@@ -270,7 +301,8 @@ body {
     }
 }
 
-#login {
+#login,
+#cadastro {
     background-color: transparent!important;
 }
 

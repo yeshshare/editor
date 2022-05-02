@@ -2,31 +2,34 @@ import 'grapesjs/dist/css/grapes.min.css';
 import './plugins/grapesjs-preset-newsletter.css';
 //clear
 import './plugins/grapesjs-preset-webpage.css';
+import './plugins/grapesjs-blocks-bootstrap4.css';
 //import './plugins/grapesjs-plugin-filestack.css';
 const grapesjs = require('grapesjs');
+import { init, openNav } from "../../js/grapejs/template/lp";
+//const lp = require('../../../public/js/lp');
 // import dos arquivos javascript dos plugins
 import pluginBlocks from './plugins/grapesjs-blocks-basic';
-import pluginNavBar from './plugins/grapesjs-navbar';
-import pluginExport from './plugins/grapesjs-plugin-export';
+//import pluginNavBar from './plugins/grapesjs-navbar';
+//import pluginExport from './plugins/grapesjs-plugin-export';
 import tUIImageEditor from './plugins/grapesjs-tui-image-editor';
 import plugincountdown from './plugins/grapesjs-component-countdown';
-import pluginBlocksFlexbox from './plugins/grapesjs-blocks-flexbox';
-import pluginLorySlider from './plugins/grapesjs-lory-slider';
-import pluginTooltip from './plugins/grapesjs-tooltip';
-import pluginTabs from './plugins/grapesjs-tabs';
-import pluginTyped from './plugins/grapesjs-typed';
-import pluginCustonCode from './plugins/grapesjs-custom-code';
-import pluginForms from './plugins/grapesjs-plugin-forms';
-import pluginStyleGradient from './plugins/grapesjs-style-gradient';
-import pluginStyleFilter from './plugins/grapesjs-style-filter';
-import pluginStyleBG from './plugins/grapesjs-style-filter';
-import pluginTouch from './plugins/grapesjs-touch';
-import pluginParserPostcss from './plugins/grapesjs-parser-postcss';
-import plugingIndexeddb from './plugins/grapesjs-indexeddb';
-import pluginFirestore from './plugins/grapesjs-firestore';
+//import pluginBlocksFlexbox from './plugins/grapesjs-blocks-flexbox';
+//import pluginLorySlider from './plugins/grapesjs-lory-slider';
+//import pluginTooltip from './plugins/grapesjs-tooltip';
+//import pluginTabs from './plugins/grapesjs-tabs';
+//import pluginTyped from './plugins/grapesjs-typed';
+//import pluginCustonCode from './plugins/grapesjs-custom-code';
+//import pluginForms from './plugins/grapesjs-plugin-forms';
+//import pluginStyleGradient from './plugins/grapesjs-style-gradient';
+//import pluginStyleFilter from './plugins/grapesjs-style-filter';
+//import pluginStyleBG from './plugins/grapesjs-style-filter';
+//import pluginTouch from './plugins/grapesjs-touch';
+//import pluginParserPostcss from './plugins/grapesjs-parser-postcss';
+//import plugingIndexeddb from './plugins/grapesjs-indexeddb';
+//import pluginFirestore from './plugins/grapesjs-firestore';
+//import pluginPresetWebpage from './plugins/grapesjs-preset-webpage';
+//import bootstrap4 from './plugins/grapesjs-blocks-bootstrap4';
 //import PluginPresetNewsletter from './plugins/grapesjs-preset-newsletter';
-import pluginPresetWebpage from './plugins/grapesjs-preset-webpage';
-import bootstrap4 from './plugins/grapesjs-blocks-bootstrap4';
 //import pluginFilestack from './plugins/grapesjs-plugin-filestack';
 //import Aviary from './plugins/grapesjs-aviary';
 //import pluginPresetWebpage from './plugins/grapesjs-preset-webpage';
@@ -44,41 +47,44 @@ let remoteIcons = 'https://cdnjs.cloudflare.com/ajax/libs/tui-image-editor/3.15.
 
 let plugins = [
     pluginBlocks,
-    pluginNavBar,
+    //pluginNavBar,
     plugincountdown,
-    pluginExport,
-    pluginBlocksFlexbox,
-    pluginLorySlider,
-    pluginTooltip,
-    pluginTabs,
-    pluginTyped,
-    pluginCustonCode,
-    pluginForms,
-    pluginStyleFilter,
-    pluginStyleBG,
-    pluginStyleGradient,
-    pluginTouch,
-    pluginParserPostcss,
-    plugingIndexeddb,
-    pluginFirestore,
-    bootstrap4,
+    //pluginExport,
+    //pluginBlocksFlexbox,
+    //pluginLorySlider,
+    //pluginTooltip,
+    //pluginTabs,
+    //pluginTyped,
+    //pluginCustonCode,
+    //pluginForms,
+    //pluginStyleFilter,
+    //pluginStyleBG,
+    //pluginStyleGradient,
+    //pluginTouch,
+    //pluginParserPostcss,
+    //plugingIndexeddb,
+    //pluginFirestore,
+    //bootstrap4,
+    //pluginPresetWebpage,
     //PluginPresetNewsletter,
-    pluginPresetWebpage,
     //pluginFilestack,
     // bootstrap4,
 ]
 let pluginsOpts = {
     'grapesjs-blocks-basic': {},
-    'gjs-navbar': {},
+    //'gjs-navbar': {},
     'gjs-component-countdown': {},
-    'grapesjs-plugin-export': { addExportBtn: true },
-    'gjs-blocks-flexbox': {},
-    'grapesjs-lory-slider': {},
-    'grapesjs-tooltip': {},
-    'grapesjs-tabs': {},
-    'grapesjs-typed': {},
-    'grapesjs-custom-code': {},
-    'grapesjs-plugin-forms': {},
+    //'grapesjs-plugin-export': { addExportBtn: true },
+    //'gjs-blocks-flexbox': {},
+    //'grapesjs-lory-slider': {},
+    //'grapesjs-tooltip': {},
+    //'grapesjs-tabs': {},
+    //'grapesjs-typed': {},
+    //'grapesjs-custom-code': {},
+    //'grapesjs-plugin-forms': {},
+    //'grapesjs-style-filter': {},
+    //'grapesjs-style-bg': {},
+    /*
     'grapesjs-style-gradient': {
         colorPicker: 'default',
         grapickOpts: {
@@ -86,25 +92,18 @@ let pluginsOpts = {
             max: 99,
         }
     },
-    'grapesjs-style-filter': {},
-    'grapesjs-style-bg': {},
     'grapesjs-touch': {},
     'grapesjs-parser-postcss': {},
     'grapesjs-indexeddb': {},
     'grapesjs-firestore': {},
+    /*
     'grapesjs-blocks-bootstrap4': {
-        blocks: {
-            // ...
-        },
-        blockCategories: {
-            // ...
-        },
-        labels: {
-            // ...
-        },
-    },
+        blocks: {},
+        blockCategories: {},
+        labels: {},
+    },*/
+    //'gjs-preset-webpage': {},
     //'grapesjs-preset-newsletter': {},
-    'gjs-preset-webpage': {},
     //'grapesjs-plugin-filestack': {},
     //'grapesjs-aviary': { onApply: "284a26c74ed78be001cf6933aa6c33b694d92d8f" },
     // 
@@ -130,6 +129,9 @@ if (config.imageEditor) {
         },
     }
 }
+
+
+/*
 let canvas = {
     styles: [
         'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css'
@@ -140,11 +142,17 @@ let canvas = {
         'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'
     ],
 }
-
+*/
 
 config.plugins = plugins;
 config.pluginsOpts = pluginsOpts;
-config.canvas = canvas;
+//config.canvas = canvas;
+
+
+
+
+
+
 let editor = grapesjs.init(config);
 
 if (config.exposeApi) {
@@ -154,6 +162,7 @@ if (config.exposeApi) {
 }
 
 let loader = document.getElementById('loader');
+
 let showLoader = function() {
     if (loader) {
         loader.style.display = 'flex';
@@ -235,6 +244,7 @@ btnEdit.onclick = function() {
     modal.close();
     toastr.success('Html Saved', 'Success');
 };
+
 commands.add('html-edit', {
     run: function(editor, sender) {
         sender && sender.set('active', 0);
@@ -345,6 +355,40 @@ panels.addButton('options', [{
     }
 }]);
 panels.addButton('options', [{
+    id: 'informacoes',
+    className: 'fa fa-refresh',
+    command(editor) {
+        //console.log(lp);
+        init();
+        //alert("DEU CERTO MARCÃO");
+        //showLoader();
+        //editor.store(res => {
+        //hideLoader();
+        //toastr.success('Page Saved', 'Success');
+        //});
+    },
+    attributes: {
+        title: 'Carregar informações'
+    }
+}]);
+panels.addButton('options', [{
+    id: 'limpar',
+    className: 'fa fa-trash',
+    command(editor) {
+        console.log(editor);
+        editor.Components.clear();
+        //alert("DEU CERTO MARCÃO");
+        //showLoader();
+        //editor.store(res => {
+        //hideLoader();
+        //toastr.success('Page Saved', 'Success');
+        //});
+    },
+    attributes: {
+        title: 'Carregar informações'
+    }
+}]);
+panels.addButton('options', [{
     id: 'cancel',
     className: 'fa fa-arrow-left',
     command(editor) {
@@ -354,6 +398,7 @@ panels.addButton('options', [{
         title: 'Go back'
     }
 }]);
+
 let blockManager = editor.BlockManager;
 blockManager.add("iframe", {
     category: 'Basic',
@@ -368,11 +413,19 @@ editor.DomComponents.addType("iframe", {
     model: {
         defaults: {
             type: "iframe",
+            attributes: {
+                style: "width: 100px;height: 100px;background-color: white;",
+            },
             traits: [{
                 type: "text",
                 label: "src",
                 name: "src",
                 id: "conteudo"
+            }, {
+                type: "text",
+                label: "style",
+                name: "style",
+                id: "style"
             }]
         }
     }
@@ -381,11 +434,38 @@ if (config.templatesUrl) {
     fetch(config.templatesUrl)
         .then(resp => resp.json())
         .then(data => {
+            let idUsados = [];
             data.forEach(block => {
-                blockManager.add('block-' + block.id, block);
+                //console.log(block);
+                //console.log(block['atributes']);
+                //block.attributes = { class: 'fa fa-text' };
+                //blockManager.add('block-' + block.id, block, );
+                if (!idUsados.includes(block.id)) {
+                    blockManager.add(block.name, {
+                        id: block.id,
+                        category: 'Blocks PAPO',
+                        label: block.label,
+                        type: "section",
+                        content: block.content,
+                        selectable: true,
+                        attributes: { class: block.class },
+                    })
+                    idUsados.push(block.id);
+                }
             });
         })
         .catch(error => {
             console.log(error);
         })
-}
+};
+
+// let blockManager = editor.BlockManager;
+/*
+blockManager.add("NAVBAR", {
+    category: 'Blocks PAPO',
+    label: "Navbar",
+    type: "section",
+    content: "<section><div>TESTE</div></section>",
+    selectable: true,
+    attributes: { class: 'fa fa-bars' },
+});*/

@@ -19,7 +19,7 @@ class Page extends Model implements Editable
      * @var array
      */
     protected $fillable = [
-        'gjs_data',
+        'landingpage_id','template_id','descricao','gjs_data',
     ];
 
     /**
